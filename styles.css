@@ -31,9 +31,15 @@ header {
   height: 100px;
 }
 
-ul {
+nav ul {
   display: flex;
   gap: 1.5em;
+}
+
+.videos ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 nav li a {
@@ -56,10 +62,27 @@ nav li a:hover {
   gap: 3em;
 }
 
-.videos h1 {
-  margin-bottom: 1em;
+.videos li + li {
+  margin-top: 3rem;
 }
 
-legend + iframe {
-  margin-top: 3rem;
+.about {
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 3em;
+  color: #ffffffed;
+  letter-spacing: 0.15em;
+}
+
+.about p {
+  font-size: 1em;
+  color: #ffffffed;
+  letter-spacing: 0.15em;
+}
+
+.hero-img {
+  height: 150px;
+  padding: 10px;
 }
