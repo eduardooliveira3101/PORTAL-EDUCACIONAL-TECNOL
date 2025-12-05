@@ -1,0 +1,65 @@
+:root {
+  --brand-color: #d47b28;
+  --gray-700: #282828;
+  --text: #000000f9;
+  --text-menu: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--brand-color);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  padding-inline: 1.5em;
+  padding-block: 1.5em;
+  background-color: var(--text);
+}
+
+.logo {
+  height: 100px;
+}
+
+ul {
+  display: flex;
+  gap: 1.5em;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--text-menu);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: 300ms;
+}
+
+nav li a:hover {
+  color: var(--brand-color);
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5em;
+  width: 40em;
+  margin-inline: auto;
+  gap: 3em;
+}
+
+.videos h1 {
+  margin-bottom: 1em;
+}
+
+legend + iframe {
+  margin-top: 3rem;
+}
