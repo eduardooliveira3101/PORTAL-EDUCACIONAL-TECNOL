@@ -68,6 +68,7 @@ nav li a:hover {
 
 .about {
   text-align: center;
+  animation: entrance 1.5s ease-in 0s 1 normal forwards;
 }
 
 .about h1 {
@@ -85,4 +86,80 @@ nav li a:hover {
 .hero-img {
   height: 150px;
   padding: 10px;
+}
+
+.concreto {
+  animation: concreto 1s ease 0s 1 normal forwards;
+}
+
+.solos {
+  animation: solos 1s ease-in 0s 1 normal forwards;
+}
+
+@keyframes entrance {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+}
+
+@keyframes concreto {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes solos {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
